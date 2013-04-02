@@ -22,6 +22,7 @@ body{
     font-family: 'Ubuntu',sans-serif;
     font-size: 5em;
     text-align: center;
+    text-shadow: 3px 3px #444444;
 }
 
 #home p {
