@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Willem Allan</title>
+
+    <meta name="description" content="Willem Allan camisa de estilo.">
+    <meta name="classification" content="Willem Allan, camisa, estilo, Python">
+    <meta name="keywords" content="Willem, Allan, camisa, estilo, Python">
+    <meta name="author" content="Willem Allan - www.willemallan.com.br">
+    <meta name="title" content="Willem Allan">
+
+    <meta name="resource-type" content="document" />
+    <meta name="robots" content="all" />
+    <meta name="doc-class" content="completed" />
+    <meta name="doc-rights" content="Public" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" href="http://europasexshop.com.br/static/css/reset.css" type="text/css">
+    <style>
+
+        body{
+            background-color: #CAE996;
+            font-size: 12px;
+            font-family: 'Ubuntu', Sans-Serif;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        header {
+            background-color:#2F5E70; overflow: hidden; height: 100px; color: #039D9A;
+        }
+
+        header h2{
+            font-size: 2em; font-weight: bold; padding: 40px 0px 0px 30px;
+        }
+
+        #menu {
+            background-color:#039D9A; top: 100px; height: 50px; position: absolute; width: 100%; z-index: 5; display: none; color:#2F5E70;
+        }
+
+        #menu ul li{
+            float:left; padding: 20px; cursor: pointer;
+        }
+
+        #menu ul li a{
+            color: #2F5E70;
+            font-weight: bold;
+        }
+
+        #content {
+            width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 6; background: #2F5E70; display: none;
+        }
+
+        #content #close {
+            float: right;
+            color: black;
+            padding: 20px;
+            background: #F2F2F2;
+        }
+
+        #content #content_menu {
+            top:0;
+            left:50%;
+            width: 80px;
+            margin-left: -50px;
+            position: absolute;
+            background: #F2F2F2;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #content #content_close {
+            top:0;
+            left:50%;
+            width: 80px;
+            margin-left: -50px;
+            position: absolute;
+            background: #F2F2F2;
+            padding: 20px;
+            display: none;
+            text-align: center;
+        }
+
+        #content nav{
+            background: #F2F2F2;
+            top: 50px;
+            left:50%;
+            margin-left: -170px;
+            position: absolute;
+            display: none;
+        }
+
+        #content nav ul li{
+            background: #F2F2F2;
+            float: left;
+            padding: 20px;
+        }
+
+        #content nav ul li:hover{
+            background: #CCC;
+            color: #FFF;
+            float: left;
+            padding: 20px;
+        }
+
+        #content #content_footer {
+            bottom:0;
+            left:50%;
+            margin-left: -40px;
+            position: absolute;
+            background: #F2F2F2;
+            padding: 20px;
+        }
+
+        #footer-fixed {
+            background-color:#FFBAA3; bottom: 0; overflow: hidden; height: 75px; position: absolute; width: 100%; z-index: 5; text-align: center;
+        }
+        #footer-open {
+            background-color:#FFE9AD; height: 75px; display: block;
+        }
+    </style>
+    <script type="text/javascript" src="http://www.willemallan.com.br/wp-content/themes/willemallan/jquery.js"></script>
+    <script type="text/javascript">
+    $(function(){
+
+
+        $("#header").stop().hover(
+          function () {
+
+            $("#menu").slideDown();
+
+          },
+          function () {
+
+            $("#menu").stop().slideUp();
+
+          }
+        );
+
+        $("#footer-fixed").stop().hover(
+          function () {
+
+            // $("#footer-open").slideDown();
+            $(this).stop().animate({
+                'height': '150px'
+            });
+
+          },
+          function () {
+
+            $(this).stop().animate({
+                'height': '75px'
+            });
+
+          }
+        );
+
+        // abre menu
+        $("#content #content_menu").click(
+          function () {
+
+            $("#content nav").slideDown();
+            $("#content_menu").hide();
+            $("#content_close").show();
+
+          }
+        );
+
+        // fecha menu
+        $("#content #content_close").click(
+          function () {
+
+            $("#content nav").slideUp();
+            $("#content_close").hide();
+            $("#content_menu").show();
+
+          }
+        );
+
+
+    });
+
+
+    function abrePagina(){
+
+        $('#content').fadeIn();
+
+    }
+
+    function fechaPagina(){
+
+        $('#content').fadeOut();
+        $("#content nav").slideUp();
+        $("#content_close").hide();
+        $("#content_menu").show();
+
+    }
+
+    </script>
+
+
+
+</head>
+<body>
+
+    <header id="header">
+        <h2>ZeTaROX</h2>
+
+        <nav id="menu">
+            <ul>
+                <li>Home</li>
+                <li><a href="#" onclick="abrePagina();">Camisetas</a></li>
+                <li>História</li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+    </header>
+
+
+HOME
+
+
+    <main id="content">
+        <a href="#" id="content_menu">MENU</a>
+        <a href="#" id="content_close">CLOSE</a>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li><a href="#" onclick="abrePagina();">Camisetas</a></li>
+                <li>História</li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+
+        <a href="#" id="close" onclick="fechaPagina();">FECHAR</a>
+        CAMISETA
+        <a href="#" id="content_footer">Roda pé</a>
+    </main>
+
+
+    <footer id="footer-fixed">
+        <footer id="footer-open">
+        Mais informações
+        </footer>
+        Desenvolvidor por Willem Allan
+    </footer>
+
+</body>
+</html>
