@@ -9,6 +9,66 @@ body{
     font-size: 12px;
 }
 
+.home_menu{
+    position: fixed;
+    background: orange;
+    width: 100%;
+    top:0;
+    z-index: 9;
+}
+
+.home_menu ul{
+    width: 30em;
+    left: 40%;
+    margin: 0 auto;
+}
+
+.home_menu ul li{
+    float:left;
+    padding: 1em;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 1.2em;
+}
+
+.home_menu ul li:hover{
+    float:left;
+    padding: 1em;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 1.2em;
+    background: #FFBE00;
+    cursor: pointer;
+}
+
+.home_menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.about_menu{
+    background: #3A68FF;
+}
+
+.about_menu ul li:hover{
+    background: #009BFF;
+}
+
+.websites_menu{
+    background: #075220;
+}
+
+.websites_menu ul li:hover{
+    background: #007828;
+}
+
+.contact_menu{
+    background: #333333;
+}
+
+.contact_menu ul li:hover{
+    background: #666666;
+}
+
+
 /* ---------------- HOME ---------------- */
 
 #home {
@@ -18,34 +78,6 @@ body{
     height: 100%;
     position: absolute;
     top: 0;
-}
-
-#home #menu{
-    position: absolute;
-    background: orange;
-    width: 100%;
-}
-
-#home #menu ul{
-    width: 30em;
-    left: 40%;
-    margin: 0 auto;
-}
-
-#home #menu ul li{
-    float:left;
-    padding: 1em;
-    font-family: 'Ubuntu',sans-serif;
-    font-size: 1.2em;
-}
-
-#home #menu ul li:hover{
-    float:left;
-    padding: 1em;
-    font-family: 'Ubuntu',sans-serif;
-    font-size: 1.2em;
-    background: #FFBE00;
-    cursor: pointer;
 }
 
 #home .text {
@@ -99,35 +131,6 @@ body{
     top: 100%;
 }
 
-#about #menu{
-    position: absolute;
-    top: 0;
-    background: #3A68FF;
-    width: 100%;
-}
-
-#about #menu ul{
-    width: 30em;
-    left: 40%;
-    margin: 0 auto;
-}
-
-#about #menu ul li{
-    float:left;
-    padding: 1em;
-    font-family: 'Ubuntu',sans-serif;
-    font-size: 1.2em;
-}
-
-#about #menu ul li:hover{
-    float:left;
-    padding: 1em;
-    font-family: 'Ubuntu',sans-serif;
-    font-size: 1.2em;
-    background: #009BFF;
-    cursor: pointer;
-}
-
 #about .text{
     position: relative;
     width: 100%;
@@ -168,35 +171,6 @@ body{
     height: 100%;
     position: absolute;
     top: 200%;
-}
-
-#websites #menu{
-    position: absolute;
-    top: 0;
-    background: #075220;
-    width: 100%;
-}
-
-#websites #menu ul{
-    width: 30em;
-    left: 40%;
-    margin: 0 auto;
-}
-
-#websites #menu ul li{
-    float:left;
-    padding: 1em;
-    font-family: 'Ubuntu',sans-serif;
-    font-size: 1.2em;
-}
-
-#websites #menu ul li:hover{
-    float:left;
-    padding: 1em;
-    font-family: 'Ubuntu',sans-serif;
-    font-size: 1.2em;
-    background: #007828;
-    cursor: pointer;
 }
 
 #websites .text{
@@ -246,34 +220,6 @@ body{
     top: 300%;
 }
 
-#contact #menu{
-    position: absolute;
-    background: #333333;
-    width: 100%;
-}
-
-#contact #menu ul{
-    width: 30em;
-    left: 40%;
-    margin: 0 auto;
-}
-
-#contact #menu ul li{
-    float:left;
-    padding: 1em;
-    font-family: 'Ubuntu',sans-serif;
-    font-size: 1.2em;
-}
-
-#contact #menu ul li:hover{
-    float:left;
-    padding: 1em;
-    font-family: 'Ubuntu',sans-serif;
-    font-size: 1.2em;
-    background: #666666;
-    cursor: pointer;
-}
-
 #contact .text {
     height: 376px;
     left: 50%;
@@ -292,9 +238,14 @@ body{
 
 #contact p {
     font-family: 'Ubuntu',sans-serif;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 2em;
-    color: #383838;
+    color: #CCC;
+}
+
+#contact p a {
+    color: #CCC;
+    text-decoration: underline;
 }
 
 #contact em {
