@@ -131,6 +131,7 @@ body{
 #about .text{
     position: relative;
     width: 100%;
+    top: 4em;
 }
 
 #about h1 {
@@ -201,6 +202,7 @@ body{
 #websites .text{
     position: relative;
     width: 100%;
+    top: 4em;
 }
 
 #websites h1 {
@@ -219,9 +221,14 @@ body{
 #websites .itens li {
     font-family: 'Ubuntu',sans-serif;
     font-size: 1.5em;
-    margin: 2em;
+    margin: 1em;
     color: #383838;
-    list-style: disc;
+    float:left;
+    background: #F2F2F2;
+    min-height: 10em;
+    min-width: 10em;
+    border-radius:2em;
+    text-align: center;
 }
 
 #websites em {
