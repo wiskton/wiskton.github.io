@@ -7,6 +7,7 @@
 
 body{
     font-size: 12px;
+    overflow: hidden;
 }
 
 .home_menu{
@@ -15,6 +16,7 @@ body{
     width: 100%;
     top:0;
     z-index: 9;
+    border-bottom: #CCC solid 1px;
 }
 
 .home_menu ul{
@@ -28,46 +30,105 @@ body{
     padding: 1em;
     font-family: 'Ubuntu',sans-serif;
     font-size: 1.2em;
+    color: white;
 }
 
 .home_menu ul li:hover{
-    float:left;
-    padding: 1em;
-    font-family: 'Ubuntu',sans-serif;
-    font-size: 1.2em;
     background: #FFBE00;
     cursor: pointer;
 }
 
-.home_menu ul li a{
-    text-decoration: none;
-    color: white;
+.about_menu{
+    position: fixed;
+    background: orange;
+    width: 100%;
+    top:0;
+    z-index: 9;
+    border-bottom: #CCC solid 1px;
+    background: #3A68FF;
 }
 
-.about_menu{
-    background: #3A68FF;
+.about_menu ul{
+    width: 30em;
+    left: 40%;
+    margin: 0 auto;
+}
+
+.about_menu ul li{
+    float:left;
+    padding: 1em;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 1.2em;
+    color: white;
 }
 
 .about_menu ul li:hover{
     background: #009BFF;
+    cursor: pointer;
 }
 
 .websites_menu{
+    position: fixed;
+    background: orange;
+    width: 100%;
+    top:0;
+    z-index: 9;
+    border-bottom: #CCC solid 1px;
     background: #075220;
+}
+
+.websites_menu ul{
+    width: 30em;
+    left: 40%;
+    margin: 0 auto;
+}
+
+.websites_menu ul li{
+    float:left;
+    padding: 1em;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 1.2em;
+    color: white;
 }
 
 .websites_menu ul li:hover{
     background: #007828;
+    cursor: pointer;
 }
 
 .contact_menu{
+    position: fixed;
+    background: orange;
+    width: 100%;
+    top:0;
+    z-index: 9;
+    border-bottom: #CCC solid 1px;
     background: #333333;
+}
+
+.contact_menu ul{
+    width: 30em;
+    left: 40%;
+    margin: 0 auto;
+}
+
+.contact_menu ul li{
+    float:left;
+    padding: 1em;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 1.2em;
+    color: white;
 }
 
 .contact_menu ul li:hover{
     background: #666666;
+    cursor: pointer;
 }
 
+#home.select, #about.select, #websites.select, #contact.select {
+  top: 0;
+  transition: 1s;
+}
 
 /* ---------------- HOME ---------------- */
 
