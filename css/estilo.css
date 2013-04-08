@@ -181,7 +181,11 @@ body{
     border-radius:6em;
 }
 
-a.tooltip span {
+#home .img li a {
+    text-decoration: none;
+}
+
+#home .img li a.tooltip span {
     position:absolute;
     z-index: 999;
     white-space:nowrap;
@@ -194,16 +198,13 @@ a.tooltip span {
     opacity: 0;
     transition:opacity 0.4s ease-out;
 }
-a.tooltip span::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -0.6em;
-    left: 0em;
-}
-a.tooltip:hover span {
+
+#home .img li a.tooltip:hover span {
     opacity: 1;
-    bottom:-3.5em;
+    position: relative;
+    bottom:-0.5em;
+    left:0em;
+    padding:0.7em;
     font-family: 'Ubuntu',sans-serif;
     font-size: 1.2em;
     border-radius:0.8em;
