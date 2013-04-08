@@ -231,6 +231,7 @@ body{
     font-family: 'Ubuntu',sans-serif;
     font-size: 8em;
     text-shadow: 3px 3px #444444;
+    margin: 0.1em;
 }
 
 #about p {
@@ -250,6 +251,14 @@ body{
 
 #about em {
     text-decoration: underline;
+}
+
+#about img{
+    float:left;
+    margin: 2em 5em 2em 5em;
+    padding: 0.5em;
+    border-radius: 2em;
+    background: #FFF;
 }
 
 /* ---------------- Websites ---------------- */
@@ -273,26 +282,28 @@ body{
     font-family: 'Ubuntu',sans-serif;
     font-size: 8em;
     text-shadow: 3px 3px #444444;
+    margin: 0.1em;
 }
 
-#websites p {
-    font-family: 'Ubuntu',sans-serif;
-    font-size: 1.5em;
-    margin: 2em;
-    color: #383838;
-}
-
-#websites .itens li {
-    font-family: 'Ubuntu',sans-serif;
-    font-size: 1.5em;
-    margin: 1em;
-    color: #383838;
+#websites ul li{
     float:left;
-    background: #F2F2F2;
-    min-height: 10em;
-    min-width: 10em;
-    border-radius:2em;
-    text-align: center;
+    width:44.2em;
+}
+
+#websites ul li img {
+    width:40em;
+    height:30em;
+    background:#F2F2F2;
+    padding:1em;
+    border-radius:6em;
+    -moz-box-shadow: 0em 1.1em 2.4em #000d00;
+    -webkit-box-shadow: 0em 1.1em 2.4em #000d00;
+    box-shadow: 0em 1.1em 2.4em #000d00;
+}
+
+#websites ul li img:hover {
+    opacity:0.3;
+    filter:alpha(opacity=30); /* For IE8 and earlier */
 }
 
 #websites em {
@@ -324,6 +335,7 @@ body{
     font-family: 'Ubuntu',sans-serif;
     font-size: 8em;
     text-shadow: 3px 3px #444444;
+    margin: 0.1em;
 }
 
 #contact p {
