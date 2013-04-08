@@ -259,6 +259,10 @@ body{
     padding: 0.5em;
     border-radius: 2em;
     background: #FFF;
+    border: #ccc solid 0.1em;
+    -moz-box-shadow: 0em 1.1em 2.4em #333;
+    -webkit-box-shadow: 0em 1.1em 2.4em #333;
+    box-shadow: 0em 1.1em 2.4em #333;
 }
 
 /* ---------------- Websites ---------------- */
