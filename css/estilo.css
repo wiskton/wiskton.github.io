@@ -223,8 +223,9 @@ body{
 
 #about .text{
     position: relative;
-    width: 100%;
-    top: 4em;
+    padding: 3em;
+    width: 100em;
+    margin: 0 auto;
 }
 
 #about h1 {
@@ -232,6 +233,7 @@ body{
     font-size: 8em;
     text-shadow: 3px 3px #444444;
     margin: 0.1em;
+    text-align: center;
 }
 
 #about p {
@@ -255,9 +257,8 @@ body{
 
 #about img{
     float:left;
-    margin: 2em 5em 2em 5em;
+    margin: 2em 5em 2em 15em;
     padding: 0.5em;
-    border-radius: 2em;
     background: #FFF;
     border: #ccc solid 0.1em;
     -moz-box-shadow: 0em 1.1em 2.4em #333;
@@ -276,10 +277,11 @@ body{
     top: 200%;
 }
 
-#websites .text{
+#websites .text {
     position: relative;
-    width: 100%;
-    top: 4em;
+    padding: 3em;
+    width: 100em;
+    margin: 0 auto;
 }
 
 #websites h1 {
@@ -287,31 +289,78 @@ body{
     font-size: 8em;
     text-shadow: 3px 3px #444444;
     margin: 0.1em;
+    text-align: center;
 }
 
-#websites ul li{
-    float:left;
-    width:44.2em;
+.view {
+   width: 300px;
+   height: 200px;
+   margin: 10px;
+   float: left;
+   border: 5px solid #fff;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   box-shadow: 0px 0px 5px #aaa;
+   cursor: default;
+}
+.view .mask, .view .content {
+   width: 300px;
+   height: 200px;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+.view img {
+   display: block;
+   position: relative;
+}
+.view a.info {
+   background:url(../images/link.png) center no-repeat;
+   display: inline-block;
+   text-decoration: none;
+   padding:0;
+   text-indent:-9999px;
+   width:20px;
+   height:20px;
 }
 
-#websites ul li img {
-    width:40em;
-    height:30em;
-    background:#F2F2F2;
-    padding:1em;
-    border-radius:6em;
-    -moz-box-shadow: 0em 1.1em 2.4em #000d00;
-    -webkit-box-shadow: 0em 1.1em 2.4em #000d00;
-    box-shadow: 0em 1.1em 2.4em #000d00;
-}
 
-#websites ul li img:hover {
-    opacity:0.3;
-    filter:alpha(opacity=30); /* For IE8 and earlier */
+.third-effect .mask {
+   opacity: 0;
+   overflow:visible;
+   border:100px solid rgba(0,0,0,0.7);
+   -moz-box-sizing:border-box;
+   -webkit-box-sizing:border-box;
+   box-sizing:border-box;
+   -webkit-transition: all 0.4s ease-in-out;
+   -moz-transition: all 0.4s ease-in-out;
+   -o-transition: all 0.4s ease-in-out;
+   -ms-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
 }
-
-#websites em {
-    text-decoration: underline;
+.third-effect a.info {
+   position:relative;
+   top:-10px;
+   opacity: 0;
+   -webkit-transition: opacity 0.5s 0s ease-in-out;
+   -moz-transition: opacity 0.5s 0s ease-in-out;
+   -o-transition: opacity 0.5s 0s ease-in-out;
+   -ms-transition: opacity 0.5s 0s ease-in-out;
+   transition: opacity 0.5s 0s ease-in-out;
+}
+.third-effect:hover .mask {
+   opacity: 1;
+   border:100px solid rgba(0,0,0,0.7);
+}
+.third-effect:hover a.info {
+    opacity:1;
+    -moz-transition-delay: 0.3s;
+    -webkit-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    -ms-transition-delay: 0.3s;
+    transition-delay: 0.3s;
 }
 
 /* ---------------- Contact ---------------- */
@@ -326,13 +375,10 @@ body{
 }
 
 #contact .text {
-    height: 376px;
-    left: 50%;
-    margin: -235px 0 0 -419px;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    width: 838px;
+    position: relative;
+    padding: 3em;
+    width: 100em;
+    margin: 0 auto;
 }
 
 #contact h1 {
@@ -340,13 +386,16 @@ body{
     font-size: 8em;
     text-shadow: 3px 3px #444444;
     margin: 0.1em;
+    text-align: center;
 }
 
 #contact p {
     font-family: 'Ubuntu',sans-serif;
     font-size: 1.2em;
-    margin: 1em;
+    margin: 0 auto;
+    padding-top:1em;
     color: #CCC;
+    width: 15em;
 }
 
 #contact p a {
