@@ -11,11 +11,13 @@ $(function () {
 
         location.href = '#'+paginaAtual;
 
-        if( paginaAnterior && paginaAtual != paginaAnterior ){
+        if( paginaAtual != paginaAnterior ){
             $('#menu').addClass(paginaAtual + '_menu');
             $('#'+paginaAtual).addClass('select');
-            $('#menu').removeClass(paginaAnterior + '_menu');
-            $('#'+paginaAnterior).removeClass('select');
+            if( paginaAnterior ){
+                $('#menu').removeClass(paginaAnterior + '_menu');
+                $('#'+paginaAnterior).removeClass('select');
+            }
         }
 
     });
